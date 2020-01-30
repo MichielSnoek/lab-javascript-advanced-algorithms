@@ -51,13 +51,13 @@ describe("Stack", function() {
     });
 
     it ("Should return that stack is not empty when adding an element", function () {
-      stack.push(19);
+      stack.push(19); 
 
       expect(stack.isEmpty()).toBe(false);
     });
 
     it ("Should return the stack when an element is inserted", function () {
-      expect(stack.push(19)).toEqual([19]);
+      expect(stack.push(19)).toEqual([19]); 
     });
 
     it ("Should insert the elements in the received order", function () {
@@ -68,7 +68,7 @@ describe("Stack", function() {
     });
 
     it ("Should return 'Stack Overflow' if the stack is full", function () {
-      stack.MAX_SIZE = 1;
+      stack.MAX_SIZE = 1; // hier ben ik nu
       stack.push(19);
 
       expect(stack.push(88)).toEqual("Stack Overflow");
